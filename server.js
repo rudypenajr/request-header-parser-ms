@@ -10,21 +10,9 @@ const {
 app.set('view engine', 'pug')
 
 // / - Home
-// app.get('/', (req, res) => res.send('Hello World!'))
-app.get('/', function (req, res) {
-    let ip = getIPAddress(req)
-    let language = getLanguage(req)
-    let os = getUserAgent(req)
+app.get('/', (req, res) => res.send('Hello World!'))
 
-    res.render('index', { 
-        title: 'Homepage - Request Header Parser Microservice',
-        message: 'Request Header Parser Microservice',
-        ipaddress: ip,
-        language: language,
-        software: os
-    })
-})
-
+// / - API
 app.get('/api/whoami', function(req, res) {
     let ip = getIPAddress(req)
     let language = getLanguage(req)
