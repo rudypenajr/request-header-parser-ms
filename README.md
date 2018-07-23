@@ -1,5 +1,7 @@
 # API Project: Request Header Parser Microservice
 
+A link to live project can be found [here](https://request-header-parser-ms.herokuapp.com/).
+
 ## User Story:
 - [x] I can get the IP address, preferred languages (from header Accept-Language) and system infos (from header User-Agent) for my device.
 
@@ -19,4 +21,4 @@
 
 ### UI 
 
-Using (Material Design's Cards)[https://material.io/develop/web/components/cards/].
+Using [Material Design's Cards](https://material.io/develop/web/components/cards/).
