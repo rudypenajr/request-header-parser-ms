@@ -1,0 +1,17 @@
+html
+    head
+        link(rel="stylesheet", type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css")
+
+    body(style={margin: '40px 0 0'})
+        div(class="mdc-card" style={height: '400px', width: '400px', margin: '0 auto', padding: '20px'})
+            p(style={margin: '10px 0 0'}) 
+                strong IP Address: 
+            p(style={margin: '5px 0 20px'}) #{ipaddress}
+
+            p(style={margin: '10px 0 0'}) 
+                strong Language: 
+            p(style={margin: '5px 0 20px'}) #{language}
+
+            p(style={margin: '10px 0 0'}) 
+                strong Software: 
+            p(style={margin: '5px 0 20px'}) #{software}
